@@ -1,0 +1,42 @@
+:root {
+  --base: 3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container .input_table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 80%;
+  background-color: red;
+}
+.container .input_table div {
+  margin: 10px;
+}
+.container .table_board {
+  position: relative;
+  width: 500px;
+  height: 800px;
+  background-color: aqua;
+}
+.container .table_board table {
+  position: relative;
+  width: 100%;
+  height: calc(--base * 80px);
+  table-layout: fixed;
+  border: 1px solid black;
+}
+
+tr, th, td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+}/*# sourceMappingURL=99.css.map */

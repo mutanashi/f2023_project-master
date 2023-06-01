@@ -1,0 +1,22 @@
+@import 'reset.css';
+body{
+    height: 500px;
+}
+.container{
+    position: relative;
+    width: 90%;
+    top: 20%;
+
+    left: 50%;
+    transform: translate(-50%, 50%);
+    div{
+        position: relative;
+        left: 40%;
+        margin: 2%;
+    }
+    li{
+        position: relative;
+        left: 40%;
+        margin: 2%;
+    }
+}
