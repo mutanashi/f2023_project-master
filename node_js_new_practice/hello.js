@@ -27,9 +27,9 @@ const sendResponse = (filename, statusCode, response)=>{
 
 
 const server = http.createServer((request, response)=>{
-    console.log(`request:${request}`);
+    /*console.log(`request:${request}`);
     console.log(`request.url:${request.url}`);
-    console.log(`request.method:${request.method}`);
+    console.log(`request.method:${request.method}`);*/
     
     const method = request.method;
     const url = request.url;
@@ -39,10 +39,10 @@ const server = http.createServer((request, response)=>{
         
         const lang = requestUrl.searchParams.get("lang");
         console.log(requestUrl);
-        if(url === "/"){
+        if(requestUrl.pathname === "/index"){
             console.log("bug1");
             sendResponse("index.html", 200, response);
-        }else if(url === "/about.html"){
+        }else if(requestUrl.pathname === "/about.html"){
             console.log("bug2");
             sendResponse("about.html", 200, response);
         }else{
