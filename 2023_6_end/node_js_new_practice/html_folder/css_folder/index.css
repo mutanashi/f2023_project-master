@@ -1,0 +1,41 @@
+@import "./reset.css";
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container div {
+  width: 90%;
+  height: 10%;
+  color: white;
+  text-align: center;
+}
+.container .display_box {
+  height: 80%;
+  display: flex;
+  gap: 20px;
+  margin: 5%;
+}
+.container .display_box .user_list {
+  background-color: #aeeec8;
+  height: 100%;
+}
+.container .display_box .chat_message {
+  background-color: #aeeec8;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */
